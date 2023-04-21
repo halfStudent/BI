@@ -1,0 +1,14 @@
+x<-c(151,174,138,186,128,136,179,163,152,131)
+#x-Inputs of datapoints
+
+#y-Output of datapoints of x.
+y<-c(63,81,56,91,47,57,76,72,62,48)
+
+#y variable is depends on x .Establish relationship between y and x.
+relation=lm(y~x)
+
+a<-data.frame(x=170)
+
+result<-predict(relation,a)
+
+print(result)
